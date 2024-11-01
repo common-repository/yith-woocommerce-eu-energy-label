@@ -1,0 +1,178 @@
+/**
+ * Frontend style
+ *
+ * @author Leanza Francesco
+ * @version 1.0.0
+ */
+
+/*
+    Energy Label
+*/
+div.yith-wceue-eu-energy-label {
+    width            : 100px;
+    height           : 30px;
+    display          : inline-block;
+    box-sizing       : border-box;
+    font-family      : "Open Sans", sans-serif;
+    font-weight      : 600;
+    font-size        : 24px;
+    text-align       : right;
+    padding          : 0 15px 0 0;
+    line-height      : 30px;
+    margin           : 10px 15px 10px 30px;
+    position         : relative;
+    background-color : #ec2a2d;
+    color            : #fff;
+    text-shadow      : 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+div.yith-wceue-eu-energy-label::before {
+    content       : " ";
+    position      : absolute;
+    width         : 0;
+    height        : 0;
+    top           : 0px;
+    left          : -15px;
+    border-bottom : 15px solid #ec2a2d;
+    border-left   : 15px solid transparent;
+}
+
+div.yith-wceue-eu-energy-label::after {
+    content     : " ";
+    position    : absolute;
+    width       : 0;
+    height      : 0;
+    top         : 15px;
+    left        : -15px;
+    border-top  : 15px solid #ec2a2d;
+    border-left : 15px solid transparent;
+}
+
+div.yith-wceue-eu-energy-label-1 {
+    background-color : #009f51;
+}
+
+div.yith-wceue-eu-energy-label-1::after, div.yith-wceue-eu-energy-label-1::before {
+    border-top-color    : #009f51;
+    border-bottom-color : #009f51;
+}
+
+div.yith-wceue-eu-energy-label-2 {
+    background-color : #3bae5a;
+}
+
+div.yith-wceue-eu-energy-label-2::after, div.yith-wceue-eu-energy-label-2::before {
+    border-top-color    : #3bae5a;
+    border-bottom-color : #3bae5a;
+}
+
+div.yith-wceue-eu-energy-label-3 {
+    background-color : #aacb40;
+}
+
+div.yith-wceue-eu-energy-label-3::after, div.yith-wceue-eu-energy-label-3::before {
+    border-top-color    : #aacb40;
+    border-bottom-color : #aacb40;
+}
+
+div.yith-wceue-eu-energy-label-4 {
+    background-color : #eee62e;
+}
+
+div.yith-wceue-eu-energy-label-4::after, div.yith-wceue-eu-energy-label-4::before {
+    border-top-color    : #eee62e;
+    border-bottom-color : #eee62e;
+}
+
+div.yith-wceue-eu-energy-label-5 {
+    background-color : #fab627;
+}
+
+div.yith-wceue-eu-energy-label-5::after, div.yith-wceue-eu-energy-label-5::before {
+    border-top-color    : #fab627;
+    border-bottom-color : #fab627;
+}
+
+div.yith-wceue-eu-energy-label-6 {
+    background-color : #f0762e;
+}
+
+div.yith-wceue-eu-energy-label-6::after, div.yith-wceue-eu-energy-label-6::before {
+    border-top-color    : #f0762e;
+    border-bottom-color : #f0762e;
+}
+
+div.yith-wceue-thumb-and-energy-container {
+    position : relative;
+}
+
+div.yith-wceue-eu-energy-label-mini {
+    width       : 50px;
+    height      : 24px;
+    display     : block;
+    box-sizing  : border-box;
+    font-family : "Open Sans", sans-serif;
+    font-weight : 600;
+    font-size   : 16px;
+    text-align  : right;
+    padding     : 0 8px 0 0;
+    line-height : 23px;
+    position    : absolute;
+    margin      : 0;
+    bottom      : 10px;
+    right       : 0;
+    z-index     : 10;
+}
+
+div.yith-wceue-eu-energy-label-mini::before {
+    content             : " ";
+    position            : absolute;
+    width               : 0;
+    height              : 0;
+    top                 : 0px;
+    left                : -12px;
+    border-bottom-width : 12px;
+    border-left-width   : 12px;
+}
+
+div.yith-wceue-eu-energy-label-mini::after {
+    content           : " ";
+    position          : absolute;
+    width             : 0;
+    height            : 0;
+    top               : 12px;
+    left              : -12px;
+    border-top-width  : 12px;
+    border-left-width : 12px;
+}
+
+a.yith-wceue-noborders {
+    border : 0 none !important;
+}
+
+/*
+    Energy tooltip
+*/
+.yith-wceue-tooltip-container {
+    background : #fff;
+    box-shadow : 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border     : 1px solid #ddd;
+    position   : absolute;
+    z-index    : 999999;
+    padding    : 7px;
+}
+
+.yith-wceue-tooltip-container img {
+    max-width : 300px;
+}
+
+.yith-wceue-tooltip-container-mini img {
+    max-width : 200px;
+}
+
+/*
+    Woocommerce OnSale Badge
+*/
+.woocommerce ul.products li.product .onsale, .woocommerce span.onsale {
+    z-index : 1;
+}
